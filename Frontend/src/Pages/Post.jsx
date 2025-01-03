@@ -23,7 +23,7 @@ export const Post = () => {
     if(form.prompt){
       try {
         setGenerateImg(true);
-        const response = await fetch('http://localhost:8080/api/v1/imageAI',{
+        const response = await fetch('https://imageai-backend.onrender.com/api/v1/imageAI',{
           method : 'POST',
           headers : {
             'Content-Type' : 'application/json',
@@ -50,7 +50,7 @@ export const Post = () => {
 
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:8080/api/v1/posts',{
+        const response = await fetch('https://imageai-backend.onrender.com/api/v1/posts',{
           method : 'POST',
           headers : {
             'Content-Type' : 'application/json',
