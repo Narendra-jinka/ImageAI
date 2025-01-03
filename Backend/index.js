@@ -4,8 +4,8 @@ import * as dotenv from "dotenv";
 import cors from 'cors';
 import  connectDB  from './MongoDb/connect.js';
 
-import postRoutes from './Routes/postRoutes.js';
-import imageAIRoutes from './Routes/imageAIRoutes.js';
+import postRoutes from './routes/postRoutes.js';
+import imageAIRoutes from './routes/imageAIRoutes.js';
 
 dotenv.config();
 
